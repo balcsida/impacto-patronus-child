@@ -54,3 +54,11 @@ add_action( 'wp_enqueue_scripts', 'impacto_patronus_child_scripts' );
      add_action( 'admin_init', 'remove_admin_menus' );
      add_action('wp_dashboard_setup', 'remove_admin_dashboard_widgets' );
  }
+
+/**
+ * Loads the child theme textdomain.
+ */
+function noar_child_theme_setup() {
+    load_child_theme_textdomain( 'impacto-patronus-child', get_stylesheet_directory() . '/languages' );
+}
+add_action( 'after_setup_theme', 'noar_child_theme_setup' );

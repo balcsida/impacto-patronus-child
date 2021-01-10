@@ -1,0 +1,136 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Impacto Patronus Child\n"
+"POT-Creation-Date: 2021-01-10 18:22+0100\n"
+"PO-Revision-Date: 2021-01-10 18:54+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: hu_HU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.4.2\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: style.css\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: furik\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+
+#: furik/furik_donate_form.php:17
+msgid "Donation with card registration"
+msgstr "Kártya regisztrációs támogatás"
+
+#: furik/furik_donate_form.php:22 furik/furik_donate_form.php:280
+#: furik/furik_donate_form.php:421
+msgid "Send"
+msgstr "Elküld"
+
+#: furik/furik_donate_form.php:142 furik/furik_donate_form.php:356
+msgid "Recurring donation"
+msgstr "Rendszeres támogatás"
+
+#: furik/furik_donate_form.php:142 furik/furik_donate_form.php:356
+msgid "What's this?"
+msgstr "Mi ez?"
+
+#: furik/furik_donate_form.php:147 furik/furik_donate_form.php:350
+msgid "One time donation"
+msgstr "Egyszeri támogatás"
+
+#: furik/furik_donate_form.php:158 furik/furik_donate_form.php:166
+msgid "Custom amount"
+msgstr "Egyéb"
+
+#: furik/furik_donate_form.php:174 furik/furik_donate_form.php:338
+msgid "Donation amount"
+msgstr "Támogatás összege"
+
+#: furik/furik_donate_form.php:183 furik/furik_donate_form.php:369
+msgid "Online payment"
+msgstr "Kártyás fizetés"
+
+#: furik/furik_donate_form.php:188 furik/furik_donate_form.php:374
+msgid "Bank transfer"
+msgstr "Átutalás"
+
+#: furik/furik_donate_form.php:194 furik/furik_donate_form.php:380
+msgid "Cash donation"
+msgstr "Készpénzes támogatás"
+
+#: furik/furik_donate_form.php:206 furik/furik_donate_form.php:308
+msgid "Your name"
+msgstr "Neved"
+
+#: furik/furik_donate_form.php:211
+msgid "Last name"
+msgstr "Vezetéknév"
+
+#: furik/furik_donate_form.php:215
+msgid "First name"
+msgstr "Keresztnév"
+
+#: furik/furik_donate_form.php:223 furik/furik_donate_form.php:315
+msgid "Anonymous donation"
+msgstr "Aninom támogatás"
+
+#: furik/furik_donate_form.php:229 furik/furik_donate_form.php:321
+msgid "E-mail address"
+msgstr "E-mail cím"
+
+#: furik/furik_donate_form.php:235
+msgid "Phone number"
+msgstr "Telefonszám"
+
+#: furik/furik_donate_form.php:242 furik/furik_donate_form.php:327
+msgid "Message"
+msgstr "Üzenet"
+
+#: furik/furik_donate_form.php:250 furik/furik_donate_form.php:391
+msgid "I have read and accept the terms and conditions"
+msgstr "Elolvastam és elfogadom az általános szerződési feltételeket"
+
+#: furik/furik_donate_form.php:257 furik/furik_donate_form.php:398
+msgid "I accept the data transmission declaration"
+msgstr "Az adatkezelési és továbbítási nyilatkozatot elfogadom"
+
+#: furik/furik_donate_form.php:264 furik/furik_donate_form.php:405
+msgid "I accept the card registration statement"
+msgstr "Elfogadom a kártyaregisztrációs nyilatkozatot"
+
+#: furik/furik_donate_form.php:272 furik/furik_donate_form.php:413
+msgid "Subscribe to our newsletter"
+msgstr "Feliratkozom a hírlevélre"
+
+#: trx_addons/components/cpt/team/tpl.single.php:74
+msgid "Brief info"
+msgstr ""
+
+#: trx_addons/components/cpt/team/tpl.single.php:101
+msgid "Socials:"
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "Impacto Patronus Child"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "http://impacto-patronus.ancorathemes.com/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Impacto Patronus Child Theme"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "AncoraThemes"
+msgstr "AncoraThemes"
+
+#. Author URI of the plugin/theme
+msgid "http://ancorathemes.com/"
+msgstr ""

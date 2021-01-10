@@ -14,12 +14,12 @@ if ( ! defined( 'ABSPATH' ) ) exit;
         var method = document.getElementById("furik_form_type_0");
         if (monthly.checked && method.checked) {
             document.getElementById("furik_form_accept_reg_div").style.display="block";
-            document.getElementById("furik_form_submit_button").value="<?php echo __('Donation with card registration', 'furik'); ?>";
+            document.getElementById("furik_form_submit_button").value="<?php echo __('Donation with card registration', 'impacto-patronus-child'); ?>";
             document.getElementById("furik_form_accept_reg").required=true
         }
         else {
             document.getElementById("furik_form_accept_reg_div").style.display="none";
-            document.getElementById("furik_form_submit_button").value="<?php echo __('Send', 'furik'); ?>";
+            document.getElementById("furik_form_submit_button").value="<?php echo __('Send', 'impacto-patronus-child'); ?>";
             document.getElementById("furik_form_accept_reg").required=false
         }
     }
@@ -139,12 +139,12 @@ if ( ! defined( 'ABSPATH' ) ) exit;
                     <div class="form-check form-check-inline">
                         <input type="radio" id="furik_form_recurring_1" class="form-check-input" name="furik_form_recurring" value="1" onChange="toggle_data_transmission()" checked="1" />
                         <label for="furik_form_recurring_1" class="form-check-label">
-                            <?php echo __('Recurring donation', 'furik'); ?> <a href="<?php echo furik_url($args['furik_monthly_explanation_url']); ?>" target="_blank"><?php echo __("What's this?", 'furik'); ?></a>
+                            <?php echo __('Recurring donation', 'impacto-patronus-child'); ?> <a href="<?php echo furik_url($args['furik_monthly_explanation_url']); ?>" target="_blank"><?php echo __("What's this?", 'impacto-patronus-child'); ?></a>
                         </label>
                     </div>
                     <div class="form-check form-check-inline">
                         <input type="radio" id="furik_form_recurring_0" class="form-check-input" name="furik_form_recurring" value="0" onChange="toggle_data_transmission()" />
-                        <label for="furik_form_recurring_0" class="form-check-label"><?php echo __('One time donation', 'furik'); ?></label>
+                        <label for="furik_form_recurring_0" class="form-check-label"><?php echo __('One time donation', 'impacto-patronus-child'); ?></label>
                     </div>
                 </div>
             </div>
@@ -155,7 +155,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
             <input type="button" class="js-set-amount button button-primary rounded-xl btn btn-primary" data-amount="3000" value="3000 Ft" />
             <input type="button" class="js-set-amount button button-primary rounded-xl btn btn-primary" data-amount="5000" value="5000 Ft" />
             <input type="button" class="js-set-amount button button-primary rounded-xl btn btn-primary" data-amount="7500" value="7500 Ft" />
-            <input type="button" class="js-set-amount button button-primary rounded-xl btn btn-primary" data-amount="" value="<?php echo __('Custom amount', 'furik'); ?>" />
+            <input type="button" class="js-set-amount button button-primary rounded-xl btn btn-primary" data-amount="" value="<?php echo __('Custom amount', 'impacto-patronus-child'); ?>" />
         </div>
 
         <div class="furik-donate-one-time-options" style="display:none">
@@ -163,7 +163,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
             <input type="button" class="js-set-amount button button-primary rounded-xl btn btn-primary" data-amount="5000" value="5000 Ft" />
             <input type="button" class="js-set-amount button button-primary rounded-xl btn btn-primary" data-amount="10000" value="10 000 Ft" />
             <input type="button" class="js-set-amount button button-primary rounded-xl btn btn-primary" data-amount="20000" value="20 000 Ft" />
-            <input type="button" class="js-set-amount button button-primary rounded-xl btn btn-primary" data-amount="" value="<?php echo __('Custom amount', 'furik'); ?>" />
+            <input type="button" class="js-set-amount button button-primary rounded-xl btn btn-primary" data-amount="" value="<?php echo __('Custom amount', 'impacto-patronus-child'); ?>" />
         </div>
 
 
@@ -171,7 +171,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
             <?php echo $args['amount_content']; ?>
         <?php else : ?>
             <div class="form-field form-group form-required furik-amount">
-                <label for="furik_form_amount"><?php echo __('Donation amount', 'furik'); ?> (Forint):</label>
+                <label for="furik_form_amount"><?php echo __('Donation amount', 'impacto-patronus-child'); ?> (Forint):</label>
                 <input type="number" min="500" step="500" class="form-control" name="furik_form_amount" id="furik_form_amount" value="<?php echo $args['amount']; ?>" required/>
             </div>
         <?php endif; ?>
@@ -180,18 +180,18 @@ if ( ! defined( 'ABSPATH' ) ) exit;
             <div>
                 <div class="form-check form-check-inline">
                     <input type="radio" id="furik_form_type_0" class="form-check-input" name="furik_form_type" value="0" checked="1" onChange="toggle_data_transmission()" />
-                    <label for="furik_form_type_0" class="form-check-label"><?php echo __('Online payment', 'furik'); ?></label>
+                    <label for="furik_form_type_0" class="form-check-label"><?php echo __('Online payment', 'impacto-patronus-child'); ?></label>
                 </div>
 
                 <div class="form-check form-check-inline">
                     <input type="radio" id="furik_form_type_1" class="form-check-input" name="furik_form_type" value="1" onChange="toggle_data_transmission()" />
-                    <label for="furik_form_type_1" class="form-check-label"><?php echo __('Bank transfer', 'furik'); ?></label>
+                    <label for="furik_form_type_1" class="form-check-label"><?php echo __('Bank transfer', 'impacto-patronus-child'); ?></label>
                 </div>
 
                 <?php if ($args['a']['enable_cash']) : ?>
                     <div class="form-check form-check-inline">
                         <input type="radio" id="furik_form_type_2" class="form-check-input" name="furik_form_type" value="2" onChange="toggle_data_transmission()" />
-                        <label for="furik_form_type_2" class="form-check-label"><?php echo __('Cash donation', 'furik'); ?></label>
+                        <label for="furik_form_type_2" class="form-check-label"><?php echo __('Cash donation', 'impacto-patronus-child'); ?></label>
                     </div>
                 <?php endif; ?>
             </div>
@@ -203,16 +203,16 @@ if ( ! defined( 'ABSPATH' ) ) exit;
         <div class="furik-contact-info">
             <?php if (!furik_extra_field_enabled('name_separation')) : ?>
                 <div class="form-field form-group form-required">
-                    <label for="furik_form_name"><?php echo __('Your name', 'furik'); ?>:</label>
+                    <label for="furik_form_name"><?php echo __('Your name', 'impacto-patronus-child'); ?>:</label>
                     <input type="text" name="furik_form_name" id="furik_form_name" class="form-control" required />
                 </div>
             <?php else : ?>
                 <div class="form-field form-group form-required">
-                    <label for="furik_form_last_name"><?php echo __('Last name', 'furik'); ?>:</label>
+                    <label for="furik_form_last_name"><?php echo __('Last name', 'impacto-patronus-child'); ?>:</label>
                     <input type="text" name="furik_form_last_name" id="furik_form_last_name" class="form-control" required />
                 </div>
                 <div class="form-field form-group form-required">
-                    <label for="furik_form_first_name"><?php echo __('First name', 'furik'); ?>:</label>
+                    <label for="furik_form_first_name"><?php echo __('First name', 'impacto-patronus-child'); ?>:</label>
                     <input type="text" name="furik_form_first_name" id="furik_form_first_name" class="form-control" required />
                 </div>
             <?php endif; ?>
@@ -220,26 +220,26 @@ if ( ! defined( 'ABSPATH' ) ) exit;
             <?php if (!isset($args['meta']['ANON_DISABLED'])) : ?>
                 <div class="form-field form-check">
                     <label for="furik_form_anon" class="form-check-label">
-                        <input type="checkbox" class="form-check-input" name="furik_form_anon" id="furik_form_anon"><?php echo __('Anonymous donation', 'furik'); ?>
+                        <input type="checkbox" class="form-check-input" name="furik_form_anon" id="furik_form_anon"><?php echo __('Anonymous donation', 'impacto-patronus-child'); ?>
                     </label>
                 </div>
             <?php endif; ?>
 
             <div class="form-field form-group form-required">
-                <label for="furik_form_email"><?php echo __('E-mail address', 'furik'); ?>:</label>
+                <label for="furik_form_email"><?php echo __('E-mail address', 'impacto-patronus-child'); ?>:</label>
                 <input type="email" class="form-control" name="furik_form_email" id="furik_form_email" required/>
             </div>
 
             <?php if (furik_extra_field_enabled('phone_number')) : ?>
                 <div class="form-field form-group">
-                    <label for="furik_form_phone_number"><?php echo __('Phone number', 'furik'); ?>:</label>
+                    <label for="furik_form_phone_number"><?php echo __('Phone number', 'impacto-patronus-child'); ?>:</label>
                     <input type="tel" class="form-control" name="furik_form_phone_number" id="furik_form_phone_number" />
                 </div>
             <?php endif; ?>
 
             <?php if (!$args['a']['skip_message']) : ?>
                 <div class="form-field form-group">
-                    <label for="furik_form_message"><?php echo __('Message', 'furik'); ?>:</label>
+                    <label for="furik_form_message"><?php echo __('Message', 'impacto-patronus-child'); ?>:</label>
                     <textarea class="form-control" name="furik_form_message" id="furik_form_message"></textarea>
                 </div>
             <?php endif; ?>
@@ -247,21 +247,21 @@ if ( ! defined( 'ABSPATH' ) ) exit;
             <div class="form-field form-check furik-form-gtc">
                 <label for="furik_form_gtc" class="form-check-label">
                     <input type="checkbox" name="furik_form_gtc" id="furik_form_gtc" class="form-check-input" required>
-                    <a href="/altalanos-szerzodesi-feltetelek" target="_blank"><?php echo __('I have read and accept the terms and conditions', 'furik'); ?></a>
+                    <a href="/altalanos-szerzodesi-feltetelek" target="_blank"><?php echo __('I have read and accept the terms and conditions', 'impacto-patronus-child'); ?></a>
                 </label>
             </div>
 
             <div class="form-field form-check furik-form-accept">
                 <label for="furik_form_accept" class="form-check-label">
                     <input type="checkbox" name="furik_form_accept" id="furik_form_accept" class="form-check-input" required>
-                    <a href="<?php echo furik_url($args['furik_data_transmission_declaration_url']); ?>" target="_blank"><?php echo __('I accept the data transmission declaration', 'furik'); ?></a>
+                    <a href="<?php echo furik_url($args['furik_data_transmission_declaration_url']); ?>" target="_blank"><?php echo __('I accept the data transmission declaration', 'impacto-patronus-child'); ?></a>
                 </label>
             </div>
 
             <div class="form-field form-check furik-form-accept-reg" id="furik_form_accept_reg_div" style="display: none">
                 <label for="furik_form_accept_reg" class="form-check-label">
                     <input type="checkbox" name="furik_form_accept-reg" id="furik_form_accept_reg" class="form-check-input">
-                    <a href="<?php echo furik_url($args['furik_card_registration_statement_url']); ?>" target="_blank"><?php echo __('I accept the card registration statement', 'furik'); ?></a>
+                    <a href="<?php echo furik_url($args['furik_card_registration_statement_url']); ?>" target="_blank"><?php echo __('I accept the card registration statement', 'impacto-patronus-child'); ?></a>
                 </label>
             </div>
 
@@ -269,7 +269,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
                 <div class="form-field form-check furik-form-newsletter">
                     <label for="furik_form_newsletter" class="form-check-label">
                         <input type="checkbox" name="furik_form_newsletter" id="furik_form_newsletter" class="form-check-input">
-                        <?php echo __('Subscribe to our newsletter', 'furik'); ?>
+                        <?php echo __('Subscribe to our newsletter', 'impacto-patronus-child'); ?>
                     </label>
                 </div>
             <?php endif; ?>
@@ -277,7 +277,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 
         <div class="submit-btn furik-submit">
             <p class="submit">
-                <input type="submit" class="button button-primary rounded-xl btn btn-primary" id="furik_form_submit_button" value="<?php echo __('Send', 'furik'); ?>" />
+                <input type="submit" class="button button-primary rounded-xl btn btn-primary" id="furik_form_submit_button" value="<?php echo __('Send', 'impacto-patronus-child'); ?>" />
             </p>
         </div>
     </div>
@@ -305,26 +305,26 @@ if ( ! defined( 'ABSPATH' ) ) exit;
     <input type="hidden" name="furik_campaign" value="<?php echo $args['campaign_id']; ?>"/>
 
     <div class="form-field form-group form-required">
-        <label for="furik_form_name"><?php echo __('Your name', 'furik'); ?>:</label>
+        <label for="furik_form_name"><?php echo __('Your name', 'impacto-patronus-child'); ?>:</label>
         <input type="text" name="furik_form_name" id="furik_form_name" class="form-control" required/>
     </div>
 
     <?php if (!isset($args['meta']['ANON_DISABLED'])) : ?>
         <div class="form-field form-check">
             <label for="furik_form_anon" class="form-check-label">
-                <input type="checkbox" class="form-check-input" name="furik_form_anon" id="furik_form_anon"><?php echo __('Anonymous donation', 'furik'); ?>
+                <input type="checkbox" class="form-check-input" name="furik_form_anon" id="furik_form_anon"><?php echo __('Anonymous donation', 'impacto-patronus-child'); ?>
             </label>
         </div>
     <?php endif; ?>
 
     <div class="form-field form-group form-required">
-        <label for="furik_form_email"><?php echo __('E-mail address', 'furik'); ?>:</label>
+        <label for="furik_form_email"><?php echo __('E-mail address', 'impacto-patronus-child'); ?>:</label>
         <input type="email" class="form-control" name="furik_form_email" id="furik_form_email" required/>
     </div>
 
     <?php if (!$args['a']['skip_message']) : ?>
         <div class="form-field form-group">
-            <label for="furik_form_message"><?php echo __('Message', 'furik'); ?>:</label>
+            <label for="furik_form_message"><?php echo __('Message', 'impacto-patronus-child'); ?>:</label>
             <textarea class="form-control" name="furik_form_message" id="furik_form_message"></textarea>
         </div>
     <?php endif; ?>
@@ -335,7 +335,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
         <?php echo $args['amount_content']; ?>
     <?php else : ?>
         <div class="form-field form-group form-required">
-            <label for="furik_form_amount"><?php echo __('Donation amount', 'furik'); ?> (Forint):</label>
+            <label for="furik_form_amount"><?php echo __('Donation amount', 'impacto-patronus-child'); ?> (Forint):</label>
             <input type="number" class="form-control" name="furik_form_amount" id="furik_form_amount" value="<?php echo $args['amount']; ?>" required/>
         </div>
     <?php endif; ?>
@@ -347,13 +347,13 @@ if ( ! defined( 'ABSPATH' ) ) exit;
             <div>
                 <div class="form-check form-check-inline">
                     <input type="radio" id="furik_form_recurring_0" class="form-check-input" name="furik_form_recurring" value="0" checked="1" onChange="toggle_data_transmission()" />
-                    <label for="furik_form_recurring_0" class="form-check-label"><?php echo __('One time donation', 'furik'); ?></label>
+                    <label for="furik_form_recurring_0" class="form-check-label"><?php echo __('One time donation', 'impacto-patronus-child'); ?></label>
                 </div>
 
                 <div class="form-check form-check-inline">
                     <input type="radio" id="furik_form_recurring_1" class="form-check-input" name="furik_form_recurring" value="1" onChange="toggle_data_transmission()" />
                     <label for="furik_form_recurring_1" class="form-check-label">
-                        <?php echo __('Recurring donation', 'furik'); ?> <a href="<?php echo furik_url($args['furik_monthly_explanation_url']); ?>" target="_blank"><?php echo __("What's this?", 'furik'); ?></a>
+                        <?php echo __('Recurring donation', 'impacto-patronus-child'); ?> <a href="<?php echo furik_url($args['furik_monthly_explanation_url']); ?>" target="_blank"><?php echo __("What's this?", 'impacto-patronus-child'); ?></a>
                     </label>
                 </div>
 
@@ -366,18 +366,18 @@ if ( ! defined( 'ABSPATH' ) ) exit;
         <div>
             <div class="form-check form-check-inline">
                 <input type="radio" id="furik_form_type_0" class="form-check-input" name="furik_form_type" value="0" checked="1" onChange="toggle_data_transmission()" />
-                <label for="furik_form_type_0" class="form-check-label"><?php echo __('Online payment', 'furik'); ?></label>
+                <label for="furik_form_type_0" class="form-check-label"><?php echo __('Online payment', 'impacto-patronus-child'); ?></label>
             </div>
 
             <div class="form-check form-check-inline">
                 <input type="radio" id="furik_form_type_1" class="form-check-input" name="furik_form_type" value="1" onChange="toggle_data_transmission()" />
-                <label for="furik_form_type_1" class="form-check-label"><?php echo __('Bank transfer', 'furik'); ?></label>
+                <label for="furik_form_type_1" class="form-check-label"><?php echo __('Bank transfer', 'impacto-patronus-child'); ?></label>
             </div>
 
             <?php if ($args['a']['enable_cash']) : ?>
                 <div class="form-check form-check-inline">
                     <input type="radio" id="furik_form_type_2" class="form-check-input" name="furik_form_type" value="2" onChange="toggle_data_transmission()" />
-                    <label for="furik_form_type_2" class="form-check-label"><?php echo __('Cash donation', 'furik'); ?></label>
+                    <label for="furik_form_type_2" class="form-check-label"><?php echo __('Cash donation', 'impacto-patronus-child'); ?></label>
                 </div>
             <?php endif; ?>
         </div>
@@ -388,21 +388,21 @@ if ( ! defined( 'ABSPATH' ) ) exit;
     <div class="form-field form-check furik-form-gtc">
         <label for="furik_form_gtc" class="form-check-label">
             <input type="checkbox" name="furik_form_gtc" id="furik_form_gtc" class="form-check-input" required>
-            <a href="/altalanos-szerzodesi-feltetelek" target="_blank"><?php echo __('I have read and accept the terms and conditions', 'furik'); ?></a>
+            <a href="/altalanos-szerzodesi-feltetelek" target="_blank"><?php echo __('I have read and accept the terms and conditions', 'impacto-patronus-child'); ?></a>
         </label>
     </div>
 
     <div class="form-field form-check furik-form-accept">
         <label for="furik_form_accept" class="form-check-label">
             <input type="checkbox" name="furik_form_accept" id="furik_form_accept" class="form-check-input" required>
-            <a href="<?php echo furik_url($args['furik_data_transmission_declaration_url']); ?>" target="_blank"><?php echo __('I accept the data transmission declaration', 'furik'); ?></a>
+            <a href="<?php echo furik_url($args['furik_data_transmission_declaration_url']); ?>" target="_blank"><?php echo __('I accept the data transmission declaration', 'impacto-patronus-child'); ?></a>
         </label>
     </div>
 
     <div class="form-field form-check furik-form-accept-reg" id="furik_form_accept_reg_div" style="display: none">
         <label for="furik_form_accept_reg" class="form-check-label">
             <input type="checkbox" name="furik_form_accept-reg" id="furik_form_accept_reg" class="form-check-input">
-            <a href="<?php echo furik_url($args['furik_card_registration_statement_url']); ?>" target="_blank"><?php echo __('I accept the card registration statement', 'furik'); ?></a>
+            <a href="<?php echo furik_url($args['furik_card_registration_statement_url']); ?>" target="_blank"><?php echo __('I accept the card registration statement', 'impacto-patronus-child'); ?></a>
         </label>
     </div>
 
@@ -410,7 +410,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
         <div class="form-field form-check furik-form-newsletter">
             <label for="furik_form_newsletter" class="form-check-label">
                 <input type="checkbox" name="furik_form_newsletter" id="furik_form_newsletter" class="form-check-input">
-                <?php echo __('Subscribe to our newsletter', 'furik'); ?>
+                <?php echo __('Subscribe to our newsletter', 'impacto-patronus-child'); ?>
             </label>
         </div>
     <?php endif; ?>
@@ -418,7 +418,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
     <div class="py-4 footer-btns">
         <div class="submit-btn">
             <p class="submit">
-                <input type="submit" class="button button-primary rounded-xl btn btn-primary" id="furik_form_submit_button" value="<?php echo __('Send', 'furik'); ?>" />
+                <input type="submit" class="button button-primary rounded-xl btn btn-primary" id="furik_form_submit_button" value="<?php echo __('Send', 'impacto-patronus-child'); ?>" />
             </p>
         </div>
         <div class="simple-logo">
