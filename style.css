@@ -1,0 +1,156 @@
+@charset "utf-8";
+/*
+ Theme Name:   Impacto Patronus Child
+ Theme URI:    http://impacto-patronus.ancorathemes.com/
+ Description:  Impacto Patronus Child Theme
+ Author:       AncoraThemes
+ Author URI:   http://ancorathemes.com/
+ Template:     impacto-patronus
+ Version:      1.0
+ Tags:         inheritable theme options
+ Text Domain:  impacto-patronus
+*/
+
+
+/* =Theme customization starts here
+-------------------------------------------------------------- */
+
+h2, h3 {
+  text-transform: none !important;
+}
+blockquote > cite,
+blockquote > p > cite,
+blockquote > .wp-block-pullquote__citation,
+.wp-block-quote .wp-block-quote__citation {
+  text-transform: none !important;
+}
+.sc_layouts_title_caption {
+  text-transform: none !important;
+}
+
+.scheme_dark.footer_wrap, .footer_wrap .scheme_dark.vc_row {
+  background-color: #151515 !important;
+}
+
+span.wpcf7-list-item {display: block;}
+
+.esg-allfilter {
+  display: none !important;
+}
+
+.elementor-text-editor i, .elementor-text-editor em, .elementor-text-editor strong, .elementor-text-editor b {
+  font-family: inherit !important;
+}
+
+.noar-application-form .wpcf7-form-control {
+  text-transform: none !important;
+}
+
+.team_member_brief_info_text {
+  font-size: 22px !important;
+}
+
+.team_member_page .team_member_header + .team_member_content {
+  margin-top: 0 !important;
+}
+.team_member_page .team_member_position {
+  text-align: center !important;
+  margin-bottom: 8.3337rem !important;
+}
+
+.ugy-leirasa-content p {
+  line-height: 1.5344em !important;
+}
+
+/**
+ * Furik Donate Form Custom style
+ */
+.furik-donate-form .furik-payment-recurring {
+  text-align: center !important;
+  margin-bottom: 20px !important;
+}
+.furik-donate-form .furik-payment-recurring .form-check-inline {
+  display: inline-block !important;
+}
+.furik-donate-form .furik-payment-recurring .form-check-inline:first-child {
+  margin-right: 10px !important;
+}
+.furik-donate-form .furik-payment-recurring .form-check-inline label {
+  font-size: 20px !important;
+}
+
+.furik-donate-form .furik-donate-one-time-options,
+.furik-donate-form .furik-donate-monthly-options {
+  font-size: 0 !important;
+  text-align: center !important;
+  margin-bottom: 10px !important;
+}
+.furik-donate-form .furik-donate-one-time-options input,
+.furik-donate-form .furik-donate-monthly-options input {
+  margin: 0 5px 5px 0 !important;
+  padding: 1.2em 1.6em !important;
+  display: inline-block !important;
+}
+.furik-donate-form .furik-amount {
+  text-align: center !important;
+  margin-bottom: 20px !important;
+}
+
+.furik-donate-form .furik-payment-method {
+  text-align: center !important;
+}
+.furik-donate-form .furik-payment-method .form-check-inline {
+  display: inline-block !important;
+}
+.furik-donate-form .furik-payment-method .form-check-inline:first-child {
+  margin-right: 10px !important;
+}
+
+.furik-donate-form-footer {
+  margin-top: 30px !important;
+  text-align: center !important;
+}
+
+.furik-donate-form .furik-contact-info {
+  margin-top: 30px !important;
+}
+.furik-donate-form .furik-contact-info .form-group,
+.furik-donate-form .furik-contact-info .form-check {
+  width: 100% !important;
+  max-width: 500px !important;
+  text-align: left !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+.furik-donate-form .furik-contact-info .form-group label {
+  display: block !important;
+  padding: 20px 0 5px 0 !important;
+}
+.furik-donate-form .furik-contact-info .form-group .form-control {
+  width: 100% !important;
+  text-transform: none !important;
+  display: inline-block !important;
+}
+.furik-donate-form .furik-contact-info .form-check {
+  padding: 10px 0 0 0 !important;
+}
+.furik-donate-form .furik-contact-info .form-check .form-check-input {
+  margin-right: 5px !important;
+}
+
+.furik-submit {
+  margin-top: 30px !important;
+  text-align: center !important;
+}
+
+.wppb-user-forms .input {
+  text-transform: none !important;
+}
+
+.scheme_dark.footer_wrap a:hover, .footer_wrap .scheme_dark.vc_row a:hover {
+  color: #ffcd17 !important;
+}
+
+.scheme_dark .sc_button_hover_slide_left:not([disabled="disabled"]) {
+  background: linear-gradient(to right,	#151515 50%,#ffcd17 50%) no-repeat scroll right bottom / 210% 100% #ffcd17 !important;
+}
