@@ -258,7 +258,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
                 </label>
             </div>
 
-            <div class="form-field form-check furik-form-accept-reg" id="furik_form_accept_reg_div" style="display: none">
+            <div class="form-field form-check furik-form-accept-reg" id="furik_form_accept_reg_div">
                 <label for="furik_form_accept_reg" class="form-check-label">
                     <input type="checkbox" name="furik_form_accept-reg" id="furik_form_accept_reg" class="form-check-input">
                     <a href="<?php echo furik_url($args['furik_card_registration_statement_url']); ?>" target="_blank"><?php echo __('I accept the card registration statement', 'impacto-patronus-child'); ?></a>
