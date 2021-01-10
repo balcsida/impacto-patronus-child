@@ -137,21 +137,28 @@ if ( ! defined( 'ABSPATH' ) ) exit;
             <div class="form-field form-group furik-payment-recurring">
                 <div>
                     <div class="form-check form-check-inline">
-                        <input type="radio" id="furik_form_recurring_0" class="form-check-input" name="furik_form_recurring" value="0" checked="1" onChange="toggle_data_transmission()" />
-                        <label for="furik_form_recurring_0" class="form-check-label"><?php echo __('One time donation', 'furik'); ?></label>
-                    </div>
-
-                    <div class="form-check form-check-inline">
-                        <input type="radio" id="furik_form_recurring_1" class="form-check-input" name="furik_form_recurring" value="1" onChange="toggle_data_transmission()" />
+                        <input type="radio" id="furik_form_recurring_1" class="form-check-input" name="furik_form_recurring" value="1" onChange="toggle_data_transmission()" checked="1" />
                         <label for="furik_form_recurring_1" class="form-check-label">
                             <?php echo __('Recurring donation', 'furik'); ?> <a href="<?php echo furik_url($args['furik_monthly_explanation_url']); ?>" target="_blank"><?php echo __("What's this?", 'furik'); ?></a>
                         </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input type="radio" id="furik_form_recurring_0" class="form-check-input" name="furik_form_recurring" value="0" onChange="toggle_data_transmission()" />
+                        <label for="furik_form_recurring_0" class="form-check-label"><?php echo __('One time donation', 'furik'); ?></label>
                     </div>
                 </div>
             </div>
         <?php endif; ?>
 
-        <div class="furik-donate-one-time-options">
+        <div class="furik-donate-monthly-options">
+            <input type="button" class="js-set-amount button button-primary rounded-xl btn btn-primary" data-amount="1500" value="1500 Ft" />
+            <input type="button" class="js-set-amount button button-primary rounded-xl btn btn-primary" data-amount="3000" value="3000 Ft" />
+            <input type="button" class="js-set-amount button button-primary rounded-xl btn btn-primary" data-amount="5000" value="5000 Ft" />
+            <input type="button" class="js-set-amount button button-primary rounded-xl btn btn-primary" data-amount="7500" value="7500 Ft" />
+            <input type="button" class="js-set-amount button button-primary rounded-xl btn btn-primary" data-amount="" value="<?php echo __('Custom amount', 'furik'); ?>" />
+        </div>
+
+        <div class="furik-donate-one-time-options" style="display:none">
             <input type="button" class="js-set-amount button button-primary rounded-xl btn btn-primary" data-amount="2500" value="2500 Ft" />
             <input type="button" class="js-set-amount button button-primary rounded-xl btn btn-primary" data-amount="5000" value="5000 Ft" />
             <input type="button" class="js-set-amount button button-primary rounded-xl btn btn-primary" data-amount="10000" value="10 000 Ft" />
@@ -159,13 +166,6 @@ if ( ! defined( 'ABSPATH' ) ) exit;
             <input type="button" class="js-set-amount button button-primary rounded-xl btn btn-primary" data-amount="" value="<?php echo __('Custom amount', 'furik'); ?>" />
         </div>
 
-        <div class="furik-donate-monthly-options" style="display:none">
-            <input type="button" class="js-set-amount button button-primary rounded-xl btn btn-primary" data-amount="1500" value="1500 Ft" />
-            <input type="button" class="js-set-amount button button-primary rounded-xl btn btn-primary" data-amount="3000" value="3000 Ft" />
-            <input type="button" class="js-set-amount button button-primary rounded-xl btn btn-primary" data-amount="5000" value="5000 Ft" />
-            <input type="button" class="js-set-amount button button-primary rounded-xl btn btn-primary" data-amount="7500" value="7500 Ft" />
-            <input type="button" class="js-set-amount button button-primary rounded-xl btn btn-primary" data-amount="" value="<?php echo __('Custom amount', 'furik'); ?>" />
-        </div>
 
         <?php if (isset($args['amount_content']) && $args['amount_content']) : ?>
             <?php echo $args['amount_content']; ?>
@@ -286,7 +286,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 <!-- Donate Form: Footer -->
 <div class="simple-logo furik-donate-form-footer">
     <a href="http://simplepartner.hu/PaymentService/Fizetesi_tajekoztato.pdf" target="_blank">
-        <img src="<?php echo furik_url("/wp-content/plugins/furik/images/simplepay.png"); ?>" title="SimplePay - Online bankkártyás fizetés" alt="SimplePay vásárlói tájékoztató">
+        <img src="<?php echo furik_url("/wp-content/uploads/noar-custom/simplepay.png"); ?>" title="SimplePay - Online bankkártyás fizetés" alt="SimplePay vásárlói tájékoztató">
     </a>
 </div>
 
